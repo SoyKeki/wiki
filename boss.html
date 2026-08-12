@@ -1,418 +1,653 @@
-.item-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin-top: 25px;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.item-card {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+    <title>PolarMC Wiki — Huevos de Boss</title>
 
-    padding: 20px;
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-    background: rgba(255,255,255,.025);
-    border: 1px solid rgba(255,255,255,.07);
+<body>
 
-    border-radius: 15px;
+<header>
 
-    transition: .25s;
-}
+    <div class="logo">
+        ❄ <span>PolarMC</span> Wiki
+    </div>
 
-.item-card:hover {
-    transform: translateY(-3px);
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./boss.html" class="active">Bosses</a>
+    </nav>
 
-    border-color: rgba(97,200,255,.25);
+</header>
 
-    box-shadow:
-        0 10px 35px rgba(0,0,0,.25);
-}
 
-.item-image {
-    width: 72px;
-    height: 72px;
+<main>
 
-    flex-shrink: 0;
+    <!-- ==============================
+         HERO
+    =============================== -->
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    <section class="page-hero">
 
-    background: rgba(0,0,0,.18);
+        <a href="./index.html" class="back">
+            ← Volver a la Wiki
+        </a>
 
-    border-radius: 14px;
-}
+        <div class="badge">
+            🥚 BOSSES
+        </div>
 
-.item-image img {
-    width: 55px;
-    height: 55px;
+        <h1>
+            Huevos de Boss
+        </h1>
 
-    object-fit: contain;
+        <p>
+            Aprende cómo conseguir Monedas Nivel IV y utilizarlas
+            para obtener los poderosos Huevos de Boss.
+        </p>
 
-    image-rendering: pixelated;
+    </section>
 
-    filter:
-        drop-shadow(0 0 12px rgba(97,200,255,.15));
-}
 
-.item-info h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
+    <section class="guide">
 
-.item-info span {
-    display: inline-block;
 
-    color: #61c8ff;
+        <!-- ==============================
+             PASO 1
+        =============================== -->
 
-    font-size: 9px;
-    font-weight: 800;
+        <div class="guide-section">
 
-    text-transform: uppercase;
+            <div class="step-number">
+                01
+            </div>
 
-    margin-bottom: 7px;
-}
+            <div class="guide-content">
 
-.item-info p {
-    color: #718095;
+                <h2>
+                    ⛏️ Ve a Warp Mine
+                </h2>
 
-    font-size: 11px;
+                <p>
+                    El primer paso para conseguir un Huevo de Boss
+                    es dirigirte al <strong>Warp Mine</strong>.
+                </p>
 
-    line-height: 1.5;
-}
+                <p>
+                    Dentro de la mina podrás encontrar dos minerales
+                    especiales necesarios para avanzar en el sistema
+                    de niveles.
+                </p>
 
 
-/* ==============================
-   CURRENCY
-============================== */
+                <div class="item-grid">
 
-.currency-showcase {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+                    <!-- ESMERALDA -->
 
-    margin: 25px 0;
+                    <div class="item-card">
 
-    padding: 20px;
+                        <div class="item-image">
+                            <img
+                                src="./assets/items/esmeralda-encantada.png"
+                                alt="Esmeralda Encantada"
+                            >
+                        </div>
 
-    border-radius: 15px;
+                        <div class="item-info">
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(97,200,255,.08),
-            rgba(255,255,255,.02)
-        );
+                            <span>Mineral especial</span>
 
-    border: 1px solid rgba(97,200,255,.12);
-}
+                            <h3>
+                                Esmeralda Encantada
+                            </h3>
 
-.currency-image {
-    width: 75px;
-    height: 75px;
+                            <p>
+                                Se obtiene minando en Warp Mine
+                                y puede intercambiarse para conseguir
+                                una Moneda Nivel IV.
+                            </p>
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+                        </div>
 
-    background: rgba(0,0,0,.2);
+                    </div>
 
-    border-radius: 14px;
-}
 
-.currency-image img {
-    width: 58px;
-    height: 58px;
+                    <!-- NETHERITE -->
 
-    object-fit: contain;
+                    <div class="item-card">
 
-    image-rendering: pixelated;
-}
+                        <div class="item-image">
+                            <img
+                                src="./assets/items/netherite-encantada.png"
+                                alt="Netherite Encantada"
+                            >
+                        </div>
 
-.currency-showcase h3 {
-    margin-bottom: 5px;
-}
+                        <div class="item-info">
 
-.currency-showcase p {
-    color: #718095;
+                            <span>Mineral especial</span>
 
-    font-size: 12px;
+                            <h3>
+                                Netherite Encantada
+                            </h3>
 
-    line-height: 1.5;
-}
+                            <p>
+                                Mineral especial obtenido en Warp Mine
+                                que permite conseguir una Moneda Nivel IV.
+                            </p>
 
+                        </div>
 
-/* ==============================
-   TRADE IMAGES
-============================== */
+                    </div>
 
-.trade-image {
-    width: 45px;
-    height: 45px;
+                </div>
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            </div>
 
-.trade-image img {
-    width: 38px;
-    height: 38px;
+        </div>
 
-    object-fit: contain;
 
-    image-rendering: pixelated;
-}
+        <!-- ==============================
+             PASO 2
+        =============================== -->
 
-.trade-result {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+        <div class="guide-section">
 
-.trade-result img {
-    width: 28px;
-    height: 28px;
+            <div class="step-number">
+                02
+            </div>
 
-    object-fit: contain;
+            <div class="guide-content">
 
-    image-rendering: pixelated;
-}
+                <h2>
+                    🪙 Consigue la Moneda Nivel IV
+                </h2>
 
+                <p>
+                    Después de conseguir los minerales necesarios,
+                    podrás intercambiarlos para obtener una
+                    <strong>Moneda Nivel IV</strong>.
+                </p>
 
-/* ==============================
-   BOSS EGG
-============================== */
 
-.boss-egg-card {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+                <div class="currency-showcase">
 
-    margin-top: 25px;
+                    <div class="currency-image">
 
-    padding: 25px;
+                        <img
+                            src="./assets/items/moneda-nivel-iv.png"
+                            alt="Moneda Nivel IV"
+                        >
 
-    border-radius: 17px;
+                    </div>
 
-    background:
-        radial-gradient(
-            circle at left,
-            rgba(97,200,255,.10),
-            transparent 55%
-        );
+                    <div>
 
-    border: 1px solid rgba(97,200,255,.14);
-}
+                        <span class="boss-label">
+                            MONEDA ESPECIAL
+                        </span>
 
-.boss-egg-image {
-    width: 100px;
-    height: 100px;
+                        <h3>
+                            Moneda Nivel IV
+                        </h3>
 
-    flex-shrink: 0;
+                        <p>
+                            Esta moneda es necesaria para poder
+                            tradear por los Huevos de Boss.
+                        </p>
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+                    </div>
 
-    border-radius: 18px;
+                </div>
 
-    background: rgba(0,0,0,.2);
-}
 
-.boss-egg-image img {
-    width: 75px;
-    height: 75px;
+                <!-- TRADES -->
 
-    object-fit: contain;
+                <div class="trade-list">
 
-    image-rendering: pixelated;
 
-    filter:
-        drop-shadow(0 0 18px rgba(97,200,255,.25));
-}
+                    <!-- ESMERALDA -->
 
-.boss-label {
-    color: #61c8ff;
+                    <div class="trade">
 
-    font-size: 9px;
-    font-weight: 800;
+                        <div class="trade-item">
 
-    letter-spacing: 1px;
-}
+                            <div class="trade-image">
 
-.boss-egg-info h3 {
-    font-size: 18px;
+                                <img
+                                    src="./assets/items/esmeralda-encantada.png"
+                                    alt="Esmeralda Encantada"
+                                >
 
-    margin: 7px 0;
-}
+                            </div>
 
-.boss-egg-info p {
-    color: #718095;
+                            <div>
 
-    font-size: 12px;
+                                <strong>
+                                    Esmeralda Encantada
+                                </strong>
 
-    line-height: 1.6;
-}
+                                <small>
+                                    24 unidades
+                                </small>
 
+                            </div>
 
-/* ==============================
-   MOB / BOSS
-============================== */
+                        </div>
 
-.mob-card {
-    display: flex;
-    align-items: center;
 
-    gap: 25px;
+                        <div class="trade-arrow">
+                            →
+                        </div>
 
-    margin-top: 18px;
 
-    padding: 25px;
+                        <div class="trade-result">
 
-    border-radius: 17px;
+                            <img
+                                src="./assets/items/moneda-nivel-iv.png"
+                                alt="Moneda Nivel IV"
+                            >
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(20,30,43,.95),
-            rgba(10,15,23,.95)
-        );
+                            <span>
+                                1 Moneda Nivel IV
+                            </span>
 
-    border: 1px solid rgba(255,255,255,.07);
+                        </div>
 
-    transition: .25s;
-}
+                    </div>
 
-.mob-card:hover {
-    transform: translateY(-3px);
 
-    border-color: rgba(97,200,255,.25);
-}
+                    <!-- NETHERITE -->
 
-.mob-image {
-    width: 150px;
-    height: 180px;
+                    <div class="trade">
 
-    flex-shrink: 0;
+                        <div class="trade-item">
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+                            <div class="trade-image">
 
-    border-radius: 15px;
+                                <img
+                                    src="./assets/items/netherite-encantada.png"
+                                    alt="Netherite Encantada"
+                                >
 
-    background:
-        radial-gradient(
-            circle,
-            rgba(97,200,255,.08),
-            transparent 70%
-        );
-}
+                            </div>
 
-.mob-image img {
-    max-width: 130px;
-    max-height: 160px;
+                            <div>
 
-    object-fit: contain;
+                                <strong>
+                                    Netherite Encantada
+                                </strong>
 
-    image-rendering: pixelated;
+                                <small>
+                                    20 unidades
+                                </small>
 
-    filter:
-        drop-shadow(0 8px 15px rgba(0,0,0,.5));
-}
+                            </div>
 
-.mob-info {
-    flex: 1;
-}
+                        </div>
 
-.mob-info h3 {
-    font-size: 20px;
 
-    margin: 7px 0;
-}
+                        <div class="trade-arrow">
+                            →
+                        </div>
 
-.mob-info > p {
-    color: #718095;
 
-    font-size: 12px;
+                        <div class="trade-result">
 
-    line-height: 1.6;
+                            <img
+                                src="./assets/items/moneda-nivel-iv.png"
+                                alt="Moneda Nivel IV"
+                            >
 
-    margin-bottom: 18px;
-}
+                            <span>
+                                1 Moneda Nivel IV
+                            </span>
 
-.mob-stats {
-    display: flex;
-    gap: 10px;
-}
+                        </div>
 
-.mob-stats > div {
-    padding: 10px 14px;
+                    </div>
 
-    border-radius: 9px;
+                </div>
 
-    background: rgba(255,255,255,.025);
 
-    border: 1px solid rgba(255,255,255,.05);
-}
+                <div class="tip">
 
-.mob-stats small {
-    display: block;
+                    <strong>
+                        💡 Consejo
+                    </strong>
 
-    color: #5f6d80;
+                    <p>
+                        Mientras más minerales mines en Warp Mine,
+                        más rápido podrás conseguir Monedas Nivel IV.
+                    </p>
 
-    font-size: 8px;
+                </div>
 
-    margin-bottom: 4px;
-}
+            </div>
 
-.mob-stats strong {
-    color: #dceeff;
+        </div>
 
-    font-size: 11px;
-}
 
+        <!-- ==============================
+             PASO 3
+        =============================== -->
 
-/* ==============================
-   MOBILE
-============================== */
+        <div class="guide-section">
 
-@media (max-width: 750px) {
+            <div class="step-number">
+                03
+            </div>
 
-    .item-grid {
-        grid-template-columns: 1fr;
-    }
+            <div class="guide-content">
 
-    .item-card {
-        padding: 16px;
-    }
+                <h2>
+                    🥚 Tradea por un Huevo de Boss
+                </h2>
 
-    .boss-egg-card {
-        flex-direction: column;
+                <p>
+                    Una vez que tengas una
+                    <strong>Moneda Nivel IV</strong>,
+                    podrás utilizarla para tradear por un
+                    <strong>Huevo de Boss</strong>.
+                </p>
 
-        align-items: flex-start;
-    }
 
-    .mob-card {
-        flex-direction: column;
+                <div class="boss-egg-card">
 
-        align-items: flex-start;
-    }
+                    <div class="boss-egg-image">
 
-    .mob-image {
-        width: 100%;
-        height: 220px;
-    }
+                        <img
+                            src="./assets/items/huevo-boss.png"
+                            alt="Huevo de Boss"
+                        >
 
-    .mob-image img {
-        max-width: 160px;
-        max-height: 200px;
-    }
+                    </div>
 
-    .mob-stats {
-        flex-wrap: wrap;
-    }
-}
-```
+                    <div class="boss-egg-info">
+
+                        <span class="boss-label">
+                            ITEM ESPECIAL
+                        </span>
+
+                        <h3>
+                            Huevo de Boss
+                        </h3>
+
+                        <p>
+                            Utiliza una Moneda Nivel IV para
+                            conseguir un Huevo de Boss y prepararte
+                            para enfrentarte a poderosos enemigos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             BOSSES
+        =============================== -->
+
+        <div class="guide-section">
+
+            <div class="step-number">
+                04
+            </div>
+
+            <div class="guide-content">
+
+                <h2>
+                    ⚔️ Enfrenta a los Bosses
+                </h2>
+
+                <p>
+                    Después de conseguir tu Huevo de Boss,
+                    podrás invocar al Boss correspondiente y
+                    enfrentarte a él.
+                </p>
+
+
+                <!-- BOSS ZOMBIE -->
+
+                <div class="mob-card">
+
+                    <div class="mob-image">
+
+                        <img
+                            src="./assets/mobs/boss-zombie.png"
+                            alt="Boss Zombie"
+                        >
+
+                    </div>
+
+                    <div class="mob-info">
+
+                        <span class="boss-label">
+                            BOSS
+                        </span>
+
+                        <h3>
+                            Boss Zombie
+                        </h3>
+
+                        <p>
+                            Un poderoso zombie preparado para
+                            enfrentarse a los jugadores que hayan
+                            conseguido avanzar en la progresión
+                            de los Bosses.
+                        </p>
+
+
+                        <div class="mob-stats">
+
+                            <div>
+
+                                <small>
+                                    TIPO
+                                </small>
+
+                                <strong>
+                                    Boss
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    DIFICULTAD
+                                </small>
+
+                                <strong>
+                                    Alta
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOSS ESQUELETO -->
+
+                <div class="mob-card">
+
+                    <div class="mob-image">
+
+                        <img
+                            src="./assets/mobs/boss-esqueleto.png"
+                            alt="Boss Esqueleto"
+                        >
+
+                    </div>
+
+                    <div class="mob-info">
+
+                        <span class="boss-label">
+                            BOSS
+                        </span>
+
+                        <h3>
+                            Boss Esqueleto
+                        </h3>
+
+                        <p>
+                            Un poderoso esqueleto que pondrá a prueba
+                            tus habilidades de combate.
+                        </p>
+
+
+                        <div class="mob-stats">
+
+                            <div>
+
+                                <small>
+                                    TIPO
+                                </small>
+
+                                <strong>
+                                    Boss
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    DIFICULTAD
+                                </small>
+
+                                <strong>
+                                    Alta
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             PROGRESIÓN
+        =============================== -->
+
+        <div class="progress-section">
+
+            <h2>
+                ⚔️ Tu progresión
+            </h2>
+
+            <div class="progression">
+
+                <div class="progress">
+                    <span>⛏️</span>
+                    <strong>Warp Mine</strong>
+                    <small>Minar</small>
+                </div>
+
+                <div class="progress-arrow">
+                    →
+                </div>
+
+                <div class="progress">
+                    <span>💎</span>
+                    <strong>Minerales</strong>
+                    <small>Conseguir</small>
+                </div>
+
+                <div class="progress-arrow">
+                    →
+                </div>
+
+                <div class="progress">
+                    <span>🪙</span>
+                    <strong>Nivel IV</strong>
+                    <small>Obtener</small>
+                </div>
+
+                <div class="progress-arrow">
+                    →
+                </div>
+
+                <div class="progress">
+                    <span>🥚</span>
+                    <strong>Huevo</strong>
+                    <small>Tradear</small>
+                </div>
+
+                <div class="progress-arrow">
+                    →
+                </div>
+
+                <div class="progress">
+                    <span>⚔️</span>
+                    <strong>Boss</strong>
+                    <small>Derrotar</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             FINAL
+        =============================== -->
+
+        <div class="final">
+
+            <div>
+                ⚔️
+            </div>
+
+            <h2>
+                ¿Estás preparado?
+            </h2>
+
+            <p>
+                Mina. Consigue tu moneda. Invoca al Boss.
+                <br>
+                <strong>
+                    Solo los mejores conseguirán derrotarlos.
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <strong>
+        ❄ PolarMC
+    </strong>
+
+    <span>
+        © 2026 PolarMC Wiki
+    </span>
+
+</footer>
+
+</body>
+</html>
