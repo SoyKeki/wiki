@@ -1,3 +1,4 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -21,7 +22,7 @@
 }
 
 body {
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
 
     background:
         radial-gradient(
@@ -36,7 +37,9 @@ body {
 }
 
 
-/* HEADER */
+/* ==============================
+   HEADER
+============================== */
 
 header {
     height: 70px;
@@ -56,16 +59,7 @@ header {
 
     border-bottom: 1px solid var(--border);
 }
-/* ==============================
-   ITEMS
-============================== */
 
-.item-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin-top: 25px;
-}
 .logo {
     font-size: 20px;
     font-weight: 800;
@@ -85,6 +79,7 @@ nav {
 
 nav a {
     color: var(--muted);
+
     text-decoration: none;
 
     font-size: 13px;
@@ -99,7 +94,9 @@ nav a.active {
 }
 
 
-/* HERO */
+/* ==============================
+   HERO
+============================== */
 
 .hero {
     max-width: 900px;
@@ -160,7 +157,9 @@ nav a.active {
 }
 
 
-/* CONTENT */
+/* ==============================
+   CONTENT
+============================== */
 
 .section,
 .guide {
@@ -187,7 +186,9 @@ nav a.active {
 }
 
 
-/* CATEGORIES */
+/* ==============================
+   CATEGORIES
+============================== */
 
 .categories {
     display: grid;
@@ -285,7 +286,9 @@ nav a.active {
 }
 
 
-/* INFO */
+/* ==============================
+   INFO
+============================== */
 
 .info {
     display: flex;
@@ -322,7 +325,9 @@ nav a.active {
 }
 
 
-/* PAGE HERO */
+/* ==============================
+   PAGE HERO
+============================== */
 
 .page-hero {
     width: min(1050px, 90%);
@@ -369,7 +374,9 @@ nav a.active {
 }
 
 
-/* GUIDE */
+/* ==============================
+   GUIDE
+============================== */
 
 .guide {
     padding-bottom: 100px;
@@ -428,7 +435,9 @@ nav a.active {
 }
 
 
-/* RESOURCES */
+/* ==============================
+   RESOURCES
+============================== */
 
 .resource-grid {
     display: grid;
@@ -475,7 +484,168 @@ nav a.active {
 }
 
 
-/* TRADES */
+/* ==============================
+   ITEMS
+============================== */
+
+.item-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+.item-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px;
+
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 15px;
+
+    transition: .25s;
+}
+
+.item-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(97,200,255,.25);
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.25);
+}
+
+.item-image {
+    width: 72px;
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,.18);
+
+    border-radius: 14px;
+}
+
+.item-image img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    image-rendering: pixelated;
+
+    filter:
+        drop-shadow(0 0 12px rgba(97,200,255,.15));
+}
+
+.item-info h3 {
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.item-info span {
+    display: inline-block;
+
+    color: var(--blue);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+.item-info p {
+    color: #718095;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   CURRENCY
+============================== */
+
+.currency-showcase {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 25px 0;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(97,200,255,.08),
+            rgba(255,255,255,.02)
+        );
+
+    border: 1px solid rgba(97,200,255,.12);
+}
+
+.currency-image {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,.2);
+
+    border-radius: 14px;
+}
+
+.currency-image img {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+
+    image-rendering: pixelated;
+}
+
+.currency-showcase h3 {
+    margin-bottom: 5px;
+}
+
+.currency-showcase p {
+    color: #718095;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   TRADES
+============================== */
 
 .trade-list {
     margin-top: 25px;
@@ -529,11 +699,35 @@ nav a.active {
     margin-top: 3px;
 }
 
+.trade-image {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trade-image img {
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+
+    image-rendering: pixelated;
+}
+
 .trade-arrow {
     color: #4f6579;
 }
 
 .trade-result {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
     justify-self: end;
 
     padding: 9px 13px;
@@ -545,11 +739,23 @@ nav a.active {
     color: var(--blue);
 
     font-size: 11px;
+
     font-weight: 800;
 }
 
+.trade-result img {
+    width: 28px;
+    height: 28px;
 
-/* TIP */
+    object-fit: contain;
+
+    image-rendering: pixelated;
+}
+
+
+/* ==============================
+   TIP
+============================== */
 
 .tip {
     margin-top: 20px;
@@ -578,58 +784,208 @@ nav a.active {
 }
 
 
-/* BOSS */
+/* ==============================
+   BOSS EGG
+============================== */
 
-.boss-card {
+.boss-egg-card {
     display: flex;
 
     align-items: center;
 
-    gap: 20px;
+    gap: 25px;
 
     margin-top: 25px;
 
     padding: 25px;
 
-    border-radius: 15px;
+    border-radius: 17px;
 
     background:
-        linear-gradient(
-            135deg,
-            rgba(97,200,255,.08),
-            rgba(255,255,255,.02)
+        radial-gradient(
+            circle at left,
+            rgba(97,200,255,.10),
+            transparent 55%
         );
 
-    border: 1px solid rgba(97,200,255,.12);
+    border: 1px solid rgba(97,200,255,.14);
 }
 
-.boss-egg {
-    width: 65px;
-    height: 65px;
+.boss-egg-image {
+    width: 100px;
+    height: 100px;
+
+    flex-shrink: 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 16px;
+    border-radius: 18px;
 
-    background: rgba(97,200,255,.08);
-
-    font-size: 35px;
+    background: rgba(0,0,0,.2);
 }
 
-.boss-card h3 {
-    margin-bottom: 6px;
+.boss-egg-image img {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+
+    image-rendering: pixelated;
+
+    filter:
+        drop-shadow(0 0 18px rgba(97,200,255,.25));
 }
 
-.boss-card p {
-    color: var(--muted);
+.boss-label {
+    color: var(--blue);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.boss-egg-info h3 {
+    font-size: 18px;
+
+    margin: 7px 0;
+}
+
+.boss-egg-info p {
+    color: #718095;
 
     font-size: 12px;
+
+    line-height: 1.6;
 }
 
 
-/* PROGRESSION */
+/* ==============================
+   MOB / BOSS
+============================== */
+
+.mob-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 18px;
+
+    padding: 25px;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20,30,43,.95),
+            rgba(10,15,23,.95)
+        );
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    transition: .25s;
+}
+
+.mob-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(97,200,255,.25);
+}
+
+.mob-image {
+    width: 150px;
+    height: 180px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(97,200,255,.08),
+            transparent 70%
+        );
+}
+
+.mob-image img {
+    max-width: 130px;
+    max-height: 160px;
+
+    object-fit: contain;
+
+    image-rendering: pixelated;
+
+    filter:
+        drop-shadow(0 8px 15px rgba(0,0,0,.5));
+}
+
+.mob-info {
+    flex: 1;
+}
+
+.mob-info h3 {
+    font-size: 20px;
+
+    margin: 7px 0;
+}
+
+.mob-info > p {
+    color: #718095;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+.mob-stats {
+    display: flex;
+
+    gap: 10px;
+}
+
+.mob-stats > div {
+    padding: 10px 14px;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.mob-stats small {
+    display: block;
+
+    color: #5f6d80;
+
+    font-size: 8px;
+
+    margin-bottom: 4px;
+}
+
+.mob-stats strong {
+    color: #dceeff;
+
+    font-size: 11px;
+}
+
+
+/* ==============================
+   PROGRESSION
+============================== */
 
 .progress-section {
     padding-top: 45px;
@@ -692,7 +1048,9 @@ nav a.active {
 }
 
 
-/* FINAL */
+/* ==============================
+   FINAL
+============================== */
 
 .final {
     margin-top: 50px;
@@ -738,7 +1096,9 @@ nav a.active {
 }
 
 
-/* FOOTER */
+/* ==============================
+   FOOTER
+============================== */
 
 footer {
     display: flex;
@@ -759,7 +1119,9 @@ footer strong {
 }
 
 
-/* MOBILE */
+/* ==============================
+   MOBILE
+============================== */
 
 @media (max-width: 750px) {
 
@@ -780,12 +1142,14 @@ footer strong {
     }
 
     .categories,
-    .resource-grid {
+    .resource-grid,
+    .item-grid {
         grid-template-columns: 1fr;
     }
 
     .guide-section {
         grid-template-columns: 1fr;
+
         gap: 15px;
     }
 
@@ -803,16 +1167,12 @@ footer strong {
 
     .trade {
         grid-template-columns: 1fr;
+
         gap: 12px;
     }
 
     .trade-result {
         justify-self: start;
-    }
-@media (max-width: 750px) {
-
-    .item-grid {
-        grid-template-columns: 1fr;
     }
 
     .item-card {
@@ -821,30 +1181,36 @@ footer strong {
 
     .boss-egg-card {
         flex-direction: column;
+
         align-items: flex-start;
     }
 
     .mob-card {
         flex-direction: column;
+
         align-items: flex-start;
     }
 
     .mob-image {
         width: 100%;
+
         height: 220px;
     }
 
     .mob-image img {
         max-width: 160px;
+
         max-height: 200px;
     }
 
     .mob-stats {
         flex-wrap: wrap;
     }
-}
+
     footer {
         flex-direction: column;
+
         gap: 10px;
     }
 }
+```
