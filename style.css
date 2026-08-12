@@ -56,7 +56,16 @@ header {
 
     border-bottom: 1px solid var(--border);
 }
+/* ==============================
+   ITEMS
+============================== */
 
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 25px;
+}
 .logo {
     font-size: 20px;
     font-weight: 800;
@@ -800,7 +809,40 @@ footer strong {
     .trade-result {
         justify-self: start;
     }
+@media (max-width: 750px) {
 
+    .item-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item-card {
+        padding: 16px;
+    }
+
+    .boss-egg-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mob-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mob-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .mob-image img {
+        max-width: 160px;
+        max-height: 200px;
+    }
+
+    .mob-stats {
+        flex-wrap: wrap;
+    }
+}
     footer {
         flex-direction: column;
         gap: 10px;
