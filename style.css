@@ -1,4 +1,3 @@
-```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -22,12 +21,12 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
 
     background:
         radial-gradient(
             circle at 50% -20%,
-            rgba(72, 174, 255, .14),
+            rgba(72,174,255,.14),
             transparent 38%
         ),
         var(--bg);
@@ -37,9 +36,7 @@ body {
 }
 
 
-/* ==============================
-   HEADER
-============================== */
+/* HEADER */
 
 header {
     height: 70px;
@@ -79,7 +76,6 @@ nav {
 
 nav a {
     color: var(--muted);
-
     text-decoration: none;
 
     font-size: 13px;
@@ -94,240 +90,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   HERO
-============================== */
-
-.hero {
-    max-width: 900px;
-
-    margin: auto;
-
-    text-align: center;
-
-    padding: 100px 20px 80px;
-}
-
-.badge {
-    display: inline-block;
-
-    padding: 8px 14px;
-
-    border-radius: 100px;
-
-    color: var(--blue);
-
-    background: rgba(97,200,255,.08);
-
-    border: 1px solid rgba(97,200,255,.16);
-
-    font-size: 11px;
-    font-weight: 800;
-
-    margin-bottom: 22px;
-}
-
-.hero h1 {
-    font-size: clamp(45px, 7vw, 76px);
-
-    line-height: 1.05;
-
-    letter-spacing: -3px;
-
-    margin-bottom: 22px;
-}
-
-.hero h1 span {
-    color: var(--blue);
-
-    text-shadow:
-        0 0 35px rgba(97,200,255,.25);
-}
-
-.hero p {
-    color: var(--muted);
-
-    max-width: 620px;
-
-    margin: auto;
-
-    line-height: 1.7;
-
-    font-size: 15px;
-}
-
-
-/* ==============================
-   CONTENT
-============================== */
-
-.section,
-.guide {
-    width: min(1050px, 90%);
-
-    margin: auto;
-}
-
-.section {
-    padding-bottom: 100px;
-}
-
-.section-header small {
-    color: var(--blue);
-
-    font-size: 11px;
-    font-weight: 800;
-}
-
-.section-header h2 {
-    margin-top: 5px;
-
-    font-size: 27px;
-}
-
-
-/* ==============================
-   CATEGORIES
-============================== */
-
-.categories {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
-
-    margin-top: 25px;
-}
-
-.category {
-    display: flex;
-
-    gap: 20px;
-
-    padding: 24px;
-
-    text-decoration: none;
-
-    color: inherit;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(17,27,41,.9),
-            rgba(10,15,23,.9)
-        );
-
-    border: 1px solid var(--border);
-
-    border-radius: 17px;
-
-    transition: .25s;
-}
-
-.category:hover {
-    transform: translateY(-3px);
-
-    border-color: rgba(97,200,255,.25);
-
-    box-shadow:
-        0 15px 45px rgba(0,0,0,.25);
-}
-
-.category-icon {
-    width: 55px;
-    height: 55px;
-
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    background: rgba(97,200,255,.08);
-
-    font-size: 25px;
-}
-
-.category-content h3 {
-    margin-bottom: 7px;
-}
-
-.category-content p {
-    color: var(--muted);
-
-    font-size: 13px;
-
-    line-height: 1.6;
-}
-
-.category-content span {
-    display: inline-block;
-
-    margin-top: 13px;
-
-    color: var(--blue);
-
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.category.disabled {
-    opacity: .55;
-
-    cursor: default;
-}
-
-.category.disabled:hover {
-    transform: none;
-    box-shadow: none;
-}
-
-
-/* ==============================
-   INFO
-============================== */
-
-.info {
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
-
-    padding: 25px;
-
-    margin-top: 25px;
-
-    background: rgba(97,200,255,.04);
-
-    border: 1px solid rgba(97,200,255,.1);
-
-    border-radius: 15px;
-}
-
-.info-icon {
-    font-size: 30px;
-}
-
-.info h2 {
-    font-size: 17px;
-
-    margin-bottom: 5px;
-}
-
-.info p {
-    color: var(--muted);
-
-    font-size: 13px;
-}
-
-
-/* ==============================
-   PAGE HERO
-============================== */
+/* PAGE HERO */
 
 .page-hero {
     width: min(1050px, 90%);
@@ -355,6 +118,25 @@ nav a.active {
     color: var(--blue);
 }
 
+.badge {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border-radius: 100px;
+
+    color: var(--blue);
+
+    background: rgba(97,200,255,.08);
+
+    border: 1px solid rgba(97,200,255,.16);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
 .page-hero h1 {
     font-size: clamp(38px, 6vw, 62px);
 
@@ -374,11 +156,13 @@ nav a.active {
 }
 
 
-/* ==============================
-   GUIDE
-============================== */
+/* GUIDE */
 
 .guide {
+    width: min(1050px, 90%);
+
+    margin: auto;
+
     padding-bottom: 100px;
 }
 
@@ -435,58 +219,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   RESOURCES
-============================== */
-
-.resource-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 12px;
-
-    margin-top: 25px;
-}
-
-.resource {
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 20px;
-
-    border-radius: 14px;
-
-    background: rgba(255,255,255,.025);
-
-    border: 1px solid var(--border);
-}
-
-.resource-icon {
-    font-size: 30px;
-}
-
-.resource h3 {
-    font-size: 14px;
-
-    margin-bottom: 5px;
-}
-
-.resource p {
-    color: var(--muted);
-
-    font-size: 11px;
-
-    line-height: 1.5;
-}
-
-
-/* ==============================
-   ITEMS
-============================== */
+/* ITEMS */
 
 .item-grid {
     display: grid;
@@ -500,7 +233,6 @@ nav a.active {
 
 .item-card {
     display: flex;
-
     align-items: center;
 
     gap: 18px;
@@ -564,7 +296,6 @@ nav a.active {
     color: var(--blue);
 
     font-size: 9px;
-
     font-weight: 800;
 
     text-transform: uppercase;
@@ -581,13 +312,10 @@ nav a.active {
 }
 
 
-/* ==============================
-   CURRENCY
-============================== */
+/* CURRENCY */
 
 .currency-showcase {
     display: flex;
-
     align-items: center;
 
     gap: 20px;
@@ -611,6 +339,8 @@ nav a.active {
 .currency-image {
     width: 75px;
     height: 75px;
+
+    flex-shrink: 0;
 
     display: flex;
     align-items: center;
@@ -643,9 +373,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   TRADES
-============================== */
+/* TRADES */
 
 .trade-list {
     margin-top: 25px;
@@ -679,26 +407,6 @@ nav a.active {
     gap: 12px;
 }
 
-.trade-item > span {
-    font-size: 26px;
-}
-
-.trade-item strong {
-    display: block;
-
-    font-size: 13px;
-}
-
-.trade-item small {
-    display: block;
-
-    color: #647286;
-
-    font-size: 10px;
-
-    margin-top: 3px;
-}
-
 .trade-image {
     width: 45px;
     height: 45px;
@@ -717,18 +425,33 @@ nav a.active {
     image-rendering: pixelated;
 }
 
+.trade-item strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+.trade-item small {
+    display: block;
+
+    color: #647286;
+
+    font-size: 10px;
+
+    margin-top: 3px;
+}
+
 .trade-arrow {
     color: #4f6579;
 }
 
 .trade-result {
-    display: flex;
+    justify-self: end;
 
+    display: flex;
     align-items: center;
 
     gap: 8px;
-
-    justify-self: end;
 
     padding: 9px 13px;
 
@@ -753,9 +476,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   TIP
-============================== */
+/* TIP */
 
 .tip {
     margin-top: 20px;
@@ -770,9 +491,9 @@ nav a.active {
 }
 
 .tip strong {
-    color: var(--blue);
-
     display: block;
+
+    color: var(--blue);
 
     margin-bottom: 6px;
 }
@@ -784,13 +505,10 @@ nav a.active {
 }
 
 
-/* ==============================
-   BOSS EGG
-============================== */
+/* BOSS EGG */
 
 .boss-egg-card {
     display: flex;
-
     align-items: center;
 
     gap: 25px;
@@ -863,13 +581,10 @@ nav a.active {
 }
 
 
-/* ==============================
-   MOB / BOSS
-============================== */
+/* MOB / BOSS */
 
 .mob-card {
     display: flex;
-
     align-items: center;
 
     gap: 25px;
@@ -983,9 +698,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   PROGRESSION
-============================== */
+/* PROGRESSION */
 
 .progress-section {
     padding-top: 45px;
@@ -1048,9 +761,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   FINAL
-============================== */
+/* FINAL */
 
 .final {
     margin-top: 50px;
@@ -1096,9 +807,7 @@ nav a.active {
 }
 
 
-/* ==============================
-   FOOTER
-============================== */
+/* FOOTER */
 
 footer {
     display: flex;
@@ -1119,9 +828,7 @@ footer strong {
 }
 
 
-/* ==============================
-   MOBILE
-============================== */
+/* MOBILE */
 
 @media (max-width: 750px) {
 
@@ -1133,36 +840,22 @@ footer strong {
         display: none;
     }
 
-    .hero {
-        padding-top: 70px;
-    }
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
-
-    .categories,
-    .resource-grid,
-    .item-grid {
-        grid-template-columns: 1fr;
-    }
-
     .guide-section {
         grid-template-columns: 1fr;
 
         gap: 15px;
     }
 
-    .progression {
-        flex-direction: column;
+    .item-grid {
+        grid-template-columns: 1fr;
     }
 
-    .progress {
-        width: 100%;
+    .item-card {
+        padding: 16px;
     }
 
-    .progress-arrow {
-        transform: rotate(90deg);
+    .currency-showcase {
+        align-items: flex-start;
     }
 
     .trade {
@@ -1173,10 +866,6 @@ footer strong {
 
     .trade-result {
         justify-self: start;
-    }
-
-    .item-card {
-        padding: 16px;
     }
 
     .boss-egg-card {
@@ -1193,18 +882,28 @@ footer strong {
 
     .mob-image {
         width: 100%;
-
         height: 220px;
     }
 
     .mob-image img {
         max-width: 160px;
-
         max-height: 200px;
     }
 
     .mob-stats {
         flex-wrap: wrap;
+    }
+
+    .progression {
+        flex-direction: column;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .progress-arrow {
+        transform: rotate(90deg);
     }
 
     footer {
@@ -1213,4 +912,3 @@ footer strong {
         gap: 10px;
     }
 }
-```
